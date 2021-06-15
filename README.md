@@ -1,5 +1,7 @@
 Vim editor syntax support for [goal-dsl](https://github.com/robotics-4-all/goal-dsl).
 
+![goal-dsl.vim](gruvbox)
+
 # Install
 
 ## Pathogen
@@ -18,3 +20,5 @@ Plugin 'johnstef99/goal-dsl.vim'
 ```
 NeoBundle 'johnstef99/goal-dsl.vim'
 ```
+
+[gruvbox]: images/gruvbox.png
