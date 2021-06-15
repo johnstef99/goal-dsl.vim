@@ -2,7 +2,7 @@
 " Language:     Goal-dsl
 " Maintainer:   johnstef
 "               john@johnstef.com
-" Last Change:  Tue Jun 15 12:32:18 AM EEST 2021
+" Last Change:  Tue Jun 15 02:38:01 PM EEST 2021
 " Version:      0.1
 " Remark:       Does not recognize *all* keywords yet
 "               but the most commonly used ones are.
@@ -28,7 +28,7 @@ syn region goalString start=/'/ skip=/\\'/ end=/'/ oneline
 
 syn keyword goalImport import
 
-syn match goalEnum "\<[A-Z]*\>"
+syn match goalEnum "\<[A-Z_]*\>"
 " Operators
 syn match goalOperator "\v\=\="
 syn match goalOperator "\v\>"
@@ -39,9 +39,9 @@ syn match goalOperator "\v\-\>"
 
 
 hi def link goalComment Comment
-hi def link goalEnum Constant
+hi def link goalEnum Keyword
 hi def link goalNumber Number
-hi def link goalType Keyword
+hi def link goalType Type
 hi def link goalString String
 hi def link goalImport Include
 hi def link goalOperator Operator
