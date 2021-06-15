@@ -27,7 +27,7 @@ syn match  goalType "\(Point\|Orientation\)\(2\|3\)D"
 syn region goalString start=/"/ skip=/\\"/ end=/"/ oneline
 syn region goalString start=/'/ skip=/\\'/ end=/'/ oneline
 
-syn keyword goalImport import
+syn keyword goalImport import as
 
 syn match goalEnum "\<[A-Z_]*\>"
 syn keyword goalBool True False
