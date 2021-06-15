@@ -1,6 +1,6 @@
 Vim editor syntax support for [goal-dsl](https://github.com/robotics-4-all/goal-dsl).
 
-![goal-dsl.vim](gruvbox)
+![goal-dsl.vim][gruvbox]
 
 # Install
 
