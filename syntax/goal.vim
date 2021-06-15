@@ -22,6 +22,7 @@ syn keyword goalType
    \ AMQPBroker MQTTBroker RedisBroker
    \ BrokerAuthPlain
    \ Target
+syn match  goalType "\(Point\|Orientation\)\(2\|3\)D"
 
 syn region goalString start=/"/ skip=/\\"/ end=/"/ oneline
 syn region goalString start=/'/ skip=/\\'/ end=/'/ oneline
@@ -29,6 +30,8 @@ syn region goalString start=/'/ skip=/\\'/ end=/'/ oneline
 syn keyword goalImport import
 
 syn match goalEnum "\<[A-Z_]*\>"
+syn keyword goalBool True False
+
 " Operators
 syn match goalOperator "\v\=\="
 syn match goalOperator "\v\>"
@@ -45,5 +48,6 @@ hi def link goalType Type
 hi def link goalString String
 hi def link goalImport Include
 hi def link goalOperator Operator
+hi def link goalBool Boolean
 
 let b:current_syntax = "goal"
